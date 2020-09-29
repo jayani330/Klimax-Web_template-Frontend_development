@@ -1,0 +1,215 @@
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --main-font-color-dark-hover: #108bca;
+    --secondary-font-color: #ffff;
+    --body-font-color: #464646; 
+}
+
+.footerBefore-wrapper{
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer-before{
+    position: absolute;
+    width: 70%;
+    height: 650px;
+    background-color: var(--secondary-font-color);
+    overflow: hidden;
+}
+
+
+/*footer before topic*/
+.footerBefore-topic-wrapper{
+    width: 150px;
+    height: 10%;
+    max-height: max-content;
+    min-width: max-content;
+    position: absolute;
+    top: 8%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footerBefore-hr-line{
+    width: 40%;
+    background-color: var(--main-font-color-dark-hover);
+    height: 5px;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+}
+
+.footerBefore-topic{
+    color: var(--main-font-color-dark);
+    font-family: var(--main-font);
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 650;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+/*footer before topic ends*/
+
+
+
+/*content*/
+.footerBefore-content-wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 30%;
+}
+
+.footerBefore-content-img-wrapper{
+    width: 40%;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footerBefore-content{
+    width: 60%;
+    height: max-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.footerBefore-content-topic{
+    color: var(--main-font-color-dark-hover);
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: var(--main-font);
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.footerBefore-content-para{
+    color: var(--body-font-color);
+    font-family: var(--secondary-font);
+    font-size: 13.5px;
+    line-height: 18px;
+    font-weight: 500;
+    text-align: justify;
+    margin-right: 60px;
+    margin-bottom: 50px;
+}
+
+.footerBefore-content-btn{
+    font-family: var(--secondary-font);
+    color: var(--main-font-color-dark-hover);
+    background-color: transparent;
+    border: 3px solid var(--main-font-color-dark-hover);
+    border-radius: 7px;
+    padding: 8px 20px;
+    font-size: 13.5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footerBefore-content-btn:hover{
+    background: linear-gradient(to right, var(--main-font-color-dark-hover), #2e6683);
+    color: var(--secondary-font-color);
+}
+
+.footerBefore-content-img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*content ends*/
+
+/*contact*/
+.footerBefore-contact{
+    width: 90%;
+    height: max-content;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerBefore-call{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.footerBefore-email{
+    width: 50%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.footerBefore-call p{
+    color: var(--main-font-color-dark);
+    font-size: 20px;
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+    height: max-content;
+    cursor: pointer;
+}
+
+.footerBefore-call p:hover, .footerBefore-email p:hover{
+    color: #0b366b;
+}
+
+.footerBefore-phone{
+    width: max-content;
+    height: 80%;
+}
+
+.footerBefore-email p{
+    color: var(--main-font-color-dark);
+    font-size: 20px;
+    font-weight: 700;
+    width: 50%;
+    text-align: center;
+    height: max-content;
+    cursor: pointer;
+}
+
+.footerBefore-mail-img{
+    width: max-content;
+    height: 80%;
+}
+
+.footerBefore-contact .vertical-line{
+    width: 2px;
+    height: 100px;
+    background-color: #7c7c7c;
+    border-radius: 3px;
+}
+
+/*contact ends*/

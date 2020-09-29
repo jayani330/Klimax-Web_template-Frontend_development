@@ -1,0 +1,215 @@
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --main-font-color-dark-hover: #108bca;
+    --secondary-font-color: #ffff;
+    --body-font-color: #464646; 
+}
+
+.services-wrapper{
+    width: 100%;
+    height: max-content;
+    padding: 50px 0;
+    overflow: hidden;
+    position: relative;
+    background-color:  #ebebeb;
+}
+
+.services{
+    width: 70%;
+    height: max-content;
+    position: relative;
+    left: 15%;
+    padding: 10px 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.column1, .column2{
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+
+/*serivices topic*/
+.services-topic-wrapper{
+    width: 54%;
+    height: 10%;
+    max-height: max-content;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-hr-line{
+    width: 20%;
+    background-color: var(--main-font-color-dark-hover);
+    height: 5px;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+}
+
+.services-topic{
+    color: var(--main-font-color-dark);
+    font-family: var(--main-font);
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 650;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+/*topic ends*/
+
+
+
+/*services content*/
+.services .container{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    left: -10px;
+}
+
+.services .container .content, .services .container .content span{
+    color: var(--body-font-color);
+    font-family: var(--secondary-font);
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.services .container .content span{
+    color: var(--main-font-color-dark-hover);
+}
+/*services content ends*/
+
+
+
+/*services images*/
+.service-images-wrapper{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    left: 10%;
+    top: 0;
+}
+
+
+.services .column2 .image-container{
+    width: 190px;
+    height: 170px;
+    left: 10%;
+    float: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.services .column2 .service-image{
+    width: 40%;
+    position: relative;
+    top: 20%;
+}
+
+.services .column2 .image-container a{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #464646;
+    font-family: var(--main-font);
+    width: 73%;
+    text-align: center;
+    position: absolute;
+    bottom: 15%;
+    text-decoration: none;
+}
+
+#image1{
+    width: 35%;
+}
+
+#image5{
+    width: 45%;
+}
+
+#cntr1, #cntr3, #cntr5{
+    margin-right: 10%;
+}
+
+#cntr1, #cntr2, #cntr3, #cntr4{
+    border-bottom: 1px solid #9e9e9e;
+    border-width: 2px;
+}
+
+.services-ver-line{
+    width: 2px;
+    height: 150px;
+    background-color: #9e9e9e;
+    position: absolute;
+    left: 55%;
+}
+
+.services-ver-line:nth-child(2){
+    top: 38%;
+    height: 130px;
+}
+
+.services-ver-line:last-child{
+    top: 73%;
+    height: 150px;
+}
+
+.services .image-container a:hover{
+    color: var(--main-font-color-dark-hover);
+}
+/*services images ends*/
+
+
+/*single button bottom of services*/
+.single-btn-container{
+    width: 100%;
+    background-color: var(--main-font-color-dark-hover);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-btn-container button{
+    border: 2px solid transparent;
+    padding: 10px 40px;
+    background-color: var(--secondary-font-color);
+    color: var(--main-font-color-dark-hover);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 550;
+    font-family: var(--main-font);
+    border-radius: 5px;
+    margin: 40px 0;
+    cursor: pointer;
+}
+
+.single-btn-container button:hover{
+    background: linear-gradient(to right, var(--main-font-color-dark-hover), #2e6683);
+    border: 2px solid var(--secondary-font-color);
+    color: var(--secondary-font-color);
+}

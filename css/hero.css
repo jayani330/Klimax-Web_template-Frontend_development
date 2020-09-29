@@ -1,0 +1,161 @@
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --main-font-color-dark-hover: #108bca;
+    --secondary-font-color: #ffff;
+    --body-font-color: #464646; 
+}
+
+.hero-wrapper{
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+.hero-image-wrapper{
+    width: 100%;
+    height: 100vh;
+    /*background-color: rgba(221, 221, 221, 0.781);*/
+    overflow: hidden;
+    position: relative;
+}
+
+.herobg-image{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.5;
+    animation: scale 20s;
+    top: 0;
+    left: 0;
+}
+
+.blue-shape{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    animation: scale 20s;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 3;
+    /*overflow: hidden;*/
+}
+
+.hero-image{
+    width: 500px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 4;
+    animation: scaleImg 20s;
+}
+
+.banner{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 300px;
+    max-height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner h1,span{
+    font-size: 50px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    padding: 5px 0 50px 0;
+    margin: 0;
+}
+
+.banner h1, .banner-horizontal-line{
+    animation: moveBanner 1s 0.7s forwards;
+}
+
+.banner span{
+    font-weight: 150;
+}
+
+.banner-horizontal-line{
+    width: 20%;
+    height: 5px;
+    background-color: var(--main-font-color-dark-hover);
+    right: -3%;
+    border-radius: 3px;
+    position: absolute;
+}
+
+#banner-btn{
+    width: 220px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    text-transform: uppercase;
+    background-color: var(--main-font-color-dark-hover);
+    color: var(--secondary-font-color);
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    cursor: pointer;
+    animation: moveBanner 1s 0.9s forwards;
+    transition: background-color 650ms;
+    z-index: 6;
+}
+
+#banner-btn:hover{
+    /*background-color: #0b73a7;*/
+    background: linear-gradient(to right, var(--main-font-color-dark-hover), #2e6683);
+}
+
+
+@keyframes scale{
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleImg{
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes moveBanner{
+    0%{
+        transform: translateY(40rem) rotateY(-20deg);
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+
+/*responsive*/
+@media screen and (max-width: 1097px){
+    .hero-image{
+        width: 300px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1024px){
+    .hero-image{
+        width: 350px;
+    }
+
+
+}

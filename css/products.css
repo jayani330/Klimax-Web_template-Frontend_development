@@ -1,0 +1,129 @@
+:root{
+    --main-font: 'Source Sans Pro', sans-serif;
+    --secondary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --body-font: 'Cabin', sans-serif;
+    --main-font-color-dark: #252525;
+    --main-font-color-dark-hover: #108bca;
+    --secondary-font-color: #ffff;
+    --body-font-color: #464646; 
+}
+
+.products{
+    background-color: #fff;
+    width: 100%;
+    height: 520px;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--secondary-font-color);
+}
+
+.blue-shape-products{
+    position: absolute;
+    top: -120%;
+    left: -15%;
+}
+
+
+/*products topic*/
+.topic-products{
+    width: 19%;
+    height: 10%;
+    max-height: max-content;
+    position: absolute;
+    top: 2%;
+    left: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.products-hr-line{
+    width: 20%;
+    background-color: #fff;
+    height: 5px;
+    border-radius: 8px;
+    position: absolute;
+    right: 0;
+}
+
+.products-topic{
+    color: var(--secondary-font-color);
+    font-family: var(--main-font);
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    position: absolute;
+    top: 25%;
+    width: max-content;
+}
+/*products topic ends*/
+
+
+/*products containers*/
+.containers-wrapper{
+    width: 70%;
+    height: max-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.products-container{
+    width: 250px;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.products-logo{
+    width: 250px;
+}
+
+.products-para{
+    font-family: var(--secondary-font);
+    font-size: 13.5px;
+    color: var(--secondary-font-color);
+    padding: 30px 0;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 2.2rem;
+    text-align: center;
+    width: 120%;
+}
+
+.products-button{
+    font-family: var(--secondary-font);
+    color: var(--secondary-font-color);
+    background-color: transparent;
+    border: 3px solid var(--secondary-font-color);
+    border-radius: 7px;
+    padding: 8px 20px;
+    font-size: 13.5px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+
+.products-button:hover{
+    background-color: var(--secondary-font-color);
+    color: var(--main-font-color-dark-hover);
+}
+
+/*products cintainer vertival line*/
+.products-ver-line{
+    background-color: var(--secondary-font-color);
+    height: 280px;
+    width: 2px;
+}
+
+/*products container ends*/
+
+
