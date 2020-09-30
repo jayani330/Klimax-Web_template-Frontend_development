@@ -105,11 +105,16 @@
     animation: moveBanner 1s 0.9s forwards;
     transition: background-color 650ms;
     z-index: 6;
+    outline: none;
 }
 
 #banner-btn:hover{
     /*background-color: #0b73a7;*/
     background: linear-gradient(to right, var(--main-font-color-dark-hover), #2e6683);
+}
+
+#banner-btn:focus{
+    border: none;
 }
 
 

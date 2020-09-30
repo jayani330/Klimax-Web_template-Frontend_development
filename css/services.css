@@ -206,10 +206,15 @@
     border-radius: 5px;
     margin: 40px 0;
     cursor: pointer;
+    outline: none;
 }
 
 .single-btn-container button:hover{
     background: linear-gradient(to right, var(--main-font-color-dark-hover), #2e6683);
     border: 2px solid var(--secondary-font-color);
     color: var(--secondary-font-color);
+}
+
+.single-btn-container button:focus{
+    outline: none;
 }

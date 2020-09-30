@@ -110,11 +110,16 @@
     font-weight: 700;
     cursor: pointer;
     transition: background-color 650ms;
+    outline: none;
 }
 
 .products-button:hover{
     background-color: var(--secondary-font-color);
     color: var(--main-font-color-dark-hover);
+}
+
+.products-button:focus{
+    outline: none;
 }
 
 /*products cintainer vertival line*/

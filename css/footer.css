@@ -96,7 +96,7 @@ footer{
 }
 
 .after-about p:hover{
-    color: var(--main-font-color-dark-hover);
+    color: rgba(231, 231, 231, 0.74);
     text-decoration: underline;
 }
 
@@ -124,7 +124,7 @@ footer{
 
 
 .footer .contact a:hover{
-    color: var(--main-font-color-dark-hover);
+    color: rgba(231, 231, 231, 0.74);
     text-decoration: underline;
 }
 
